@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #303030 0%, #0e0b3a 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Encabezado */
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(77, 85, 204, 0.5);
+}
+
+p {
+    color: #B5A8D5;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Grid de tarjetas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Tarjetas */
+.card {
+    background: linear-gradient(145deg, rgba(33, 28, 132, 0.7) 0%, rgba(122, 115, 209, 0.3) 100%);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(122, 115, 209, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(77, 85, 204, 0.4);
+    border: 1px solid rgba(122, 115, 209, 0.4);
+}
+
+.card h2 {
+    color: #fff;
+    margin-top: 0;
+    border-bottom: 2px solid #7A73D1;
+    padding-bottom: 12px;
+    font-size: 1.5em;
+}
+
+.card p {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #d9d2f7;
+}
+
+/* Botones */
+.botones-pagina {
+    margin-top: 20px;
+}
+
+.botones-pagina a {
+    display: block;
+    background: linear-gradient(to right, #4D55CC, #7A73D1);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(77, 85, 204, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.botones-pagina a:hover {
+    background: linear-gradient(to right, #7A73D1, #B5A8D5);
+    box-shadow: 0 0 20px rgba(122, 115, 209, 0.8);
+    transform: scale(1.02);
+}
+
+.botones-pagina h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Enlaces externos */
+a[href=""] {
+    color: #B5A8D5;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.link-prinicipal{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff
+}
+.link-prinicipal:hover{
+    text-shadow: #fff 0px -2px;
+    color: #303030;
+}
